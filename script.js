@@ -6,15 +6,11 @@ botones.forEach(function(elem) {
             elem.textContent = "Agregado al carrito";
             elem.style.backgroundColor = "green";
             elem.style.color = "white"
-            elem.parentElement.classList.add('color');
+            elem.parentElement.style.backgroundColor='yellow';
         }else{
             elem.textContent =  "Comprar";
             elem.style.backgroundColor = "white";
-            elem.style.color = "black"
-
-            if(elem.parentElement.classList.contains('color')){
-                elem.parentElement.classList.remove('color');
-            }            
+            elem.style.color = "black";          
         }
         
     });
